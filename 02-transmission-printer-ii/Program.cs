@@ -4,6 +4,7 @@ class Program
     {
         PrintTransmission("System ready");
         PrintTransmission("Dock", "Gate unlocked");
+        PrintTransmission("Control", "Initialization complete", "saving");
 
         // TODO: Kall også din tredje overload.
     }
@@ -19,4 +20,9 @@ class Program
     }
 
     // TODO: Lag tredje overload.
+
+    static void PrintTransmission(string sender, string message, string status)
+    {
+        Console.WriteLine($"[{sender}] {message} - Status: {status}");
+    }
 }

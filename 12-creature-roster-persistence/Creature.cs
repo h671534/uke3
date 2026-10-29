@@ -11,6 +11,13 @@ public class Creature
         Energy = energy;
     }
 
+
+    public string ToFileLine()
+    {
+
+        return $"{Name}|{Species}|{Energy}";
+    }
+
     // TODO: Det er valgfritt om konvertering/parsing legges her
     // eller i egne metoder/klasser.
 }
